@@ -1,4 +1,4 @@
-package com.example.exercise5;
+package com.example.button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,11 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button viewToast = findViewById(R.id.viewToast);
+        Button viewToast = findViewById(R.id.button1);
         viewToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Hey, you clicked the button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"You clicked the button !!", Toast.LENGTH_SHORT).show();
             }
         });
 
